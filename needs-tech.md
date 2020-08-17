@@ -7,7 +7,7 @@ that runs the visit-counter
 
   When there is server a restart due to technical issue
 
-  Then the latest visit-counter is recovered from the auto-backup 
+  Then the latest visit-counter is recovered from the auto-backup
 
 Scenario: Reconcile counts if the sensor is offline for a while
 
