@@ -7,7 +7,7 @@ Scenario: Report visitor trends during a week of operation
 
   When the week ends
 
-  Then a report is generated with number of visitors against the days
+  Then we generate a report with number of visitors against the days
   for that week.
 
 Scenario: Alert when seating capacity is full
@@ -18,4 +18,4 @@ Scenario: Alert when seating capacity is full
   When the number of visitors cross the 70 percent of the
   capacity of hospital
 
-  Then an alert trigger is sent to the facilities manager.
+  Then we send an alert trigger to the facilities manager.

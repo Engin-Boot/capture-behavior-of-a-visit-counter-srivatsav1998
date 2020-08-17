@@ -2,13 +2,12 @@
 
 Scenario: Show patient visits during working days and holidays
 
-  Given we have unique cards issued for patients and all this information is
-  logged in hospital servers as per date.
+  Given we have unique cards issued for patients and hospital servers
+  log this information per day.
 
-  When a button which displays the patient visits against the type of day is
-  pressed
+  When the director presses the show button
 
-  Then a pie chart is displayed with the required content in it.
+  Then we will show a pie chart with the required content in it.
 
 Scenario: Compute parking slots to reserve for visiting specialists
 
@@ -17,5 +16,5 @@ Scenario: Compute parking slots to reserve for visiting specialists
 
   When there is a specialist visiting the hospital
 
-  Then the parking capacity is computed based on the staff present and a
-  slot is booked for the specialist
+  Then we compute the parking capacity based on the staff present and book
+  a slot for the specialist

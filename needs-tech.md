@@ -7,7 +7,7 @@ that runs the visit-counter
 
   When there is server a restart due to technical issue
 
-  Then the latest visit-counter is recovered from the auto-backup
+  Then we recover the latest visit-counter from the auto-backup
 
 Scenario: Reconcile counts if the sensor is offline for a while
 
@@ -15,4 +15,4 @@ Scenario: Reconcile counts if the sensor is offline for a while
 
   When the sensor is online again
 
-  Then the cloud value is updated automatically with the latest count.
+  Then we update the cloud value automatically with the latest count.
